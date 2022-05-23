@@ -6,23 +6,29 @@
         xmlns:local="clr-namespace:WpfApp22052022"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <!--<Grid>
+    <Grid ShowGridLines="True">
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="308*"></ColumnDefinition>
-            <ColumnDefinition Width="151*"></ColumnDefinition>
-            <ColumnDefinition Width="Auto" MinWidth="10,4"></ColumnDefinition>
-            <ColumnDefinition Width="229*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*" ></ColumnDefinition>
+            <ColumnDefinition Width="Auto" MinWidth="10.4"/>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <!--<ColumnDefinition Width="229*"></ColumnDefinition>-->
         </Grid.ColumnDefinitions>
-        <Button x:Name="bt_02" Grid.Column="2" Grid.Row="0" Content="BUTTON ROC2" Grid.RowSpan="3"/>
-        <Button x:Name="bt_10" Grid.Column="0" Grid.Row="1" Content="BUTTON R1C0" Background="#FFBF10DD" FontSize="16"/>
+        <Button x:Name="bt_02" Grid.Column="3" Grid.Row="0" Content="BUTTON ROC2" Grid.RowSpan="3" Grid.ColumnSpan="2"/>
+        <Button x:Name="bt_010" Grid.Column="0" Grid.Row="1" Content="BUTTON R1C0" Background="#FF19DD10" FontSize="16" Grid.ColumnSpan="2" />
         <GridSplitter Grid.Column="2" ShowsPreview="False" HorizontalAlignment="Center" VerticalAlignment="Stretch" Grid.RowSpan="3" Width="5"/>
-    </Grid>-->
+        <!--Задачи размеров условные единицы
+        px пиксели
+        in дюймы
+        см сантимеры
+        pt точки
+        -->
+    </Grid>
 
     <!--<StackPanel Orientation="Horizontal">
         <Button Background="Aquamarine" Width="100">BUTTON_1</Button>
@@ -52,7 +58,7 @@
         <Button Background="Green" Canvas.Bottom="100" Canvas.Left="160" Width="100" Height="80" Canvas.Top="197">B2</Button>
     </Canvas>-->
 
-    <Grid>
+    <!--<Grid>
         <Button x:Name="button" Content="Привет мир" Margin="30,100"></Button>
-    </Grid>
+    </Grid>-->
 </Window>
