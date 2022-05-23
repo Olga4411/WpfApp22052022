@@ -8,9 +8,10 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid ShowGridLines="True">
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -19,9 +20,12 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <!--<ColumnDefinition Width="229*"></ColumnDefinition>-->
         </Grid.ColumnDefinitions>
-        <Button x:Name="bt_02" Grid.Column="3" Grid.Row="0" Content="BUTTON ROC2" Grid.RowSpan="3" Grid.ColumnSpan="2"/>
-        <Button x:Name="bt_010" Grid.Column="0" Grid.Row="1" Content="BUTTON R1C0" Background="#FF19DD10" FontSize="16" Grid.ColumnSpan="2" />
-        <GridSplitter Grid.Column="2" ShowsPreview="False" HorizontalAlignment="Center" VerticalAlignment="Stretch" Grid.RowSpan="3" Width="5"/>
+        <Button x:Name="bt_02" Grid.Column="3" Grid.Row="0" Content="BUTTON ROC2" Grid.RowSpan="4"/>
+        <Button x:Name="bt_010" Grid.Column="0" Grid.Row="2" Content="BUTTON R1C0" Background="#FF19DD10" FontSize="16" />
+        <GridSplitter Grid.Column="2" ShowsPreview="True" HorizontalAlignment="Center" VerticalAlignment="Stretch" Grid.RowSpan="4" Width="5"/>
+        <GridSplitter Grid.Row="1" ShowsPreview="False" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.ColumnSpan="4" Height="5"/>
+        <!-- куда, showspreview-будет ли отображение сразу или после того когда изменятся, отношение по горизонтали и вертикали
+        вертикальная полоска сдвига (выравнивание ориентации в пространстве grid-->
         <!--Задачи размеров условные единицы
         px пиксели
         in дюймы
