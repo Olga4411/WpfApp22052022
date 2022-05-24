@@ -41,28 +41,41 @@
         <Button Background="Gold">BUTTON_4</Button>
     
     </StackPanel>-->
+    <!--<StackPanel Orientation="Vertical">
+        <Button Background="Aquamarine" Width="100">BUTTON_1</Button>
+        <Button Background="Beige" Height="100">BUTTON_2</Button>
+        <Button Background="Brown">BUTTON_3</Button>
+        <Button Background="Gold">BUTTON_4</Button>
+    </StackPanel>-->
 
-    <!--<WrapPanel Orientation="Vertical">
+    <!--<WrapPanel Orientation="Horizontal">
         <Button Background="Aquamarine" Height="50" Width="100">BUTTON_1</Button>
         <Button Background="Beige" Height="50" Width="80">BUTTON_2</Button>
         <Button Background="Brown">BUTTON_3</Button>
         <Button Background="Gold">BUTTON_4</Button>
+        <Button Background="Aquamarine" Height="50" Width="100">BUTTON_1</Button>
+        <Button Background="Beige" Height="50" Width="80">BUTTON_2</Button>
+        <Button Background="Brown">BUTTON_3</Button>
+        <Button Background="Gold">BUTTON_4</Button>
+        --><!-- компоновка друг за другом, размеры по контенту либо по размерам
+        окно двигается-адаптивность элементов
+        --><!--
     </WrapPanel>-->
 
-    <!--<DockPanel>
+    <DockPanel>
         <Button DockPanel.Dock="Top" Background="Green" Height="80">BUTTON_1</Button>
         <Button DockPanel.Dock="Left" Background="Aqua" Height="120">BUTTON_2</Button>
         <Button DockPanel.Dock="Right" Background="Red">BUTTON_3</Button>
         <Button DockPanel.Dock="Bottom" Background="Yellow">BUTTON_4</Button>
         <Button DockPanel.Dock="Top" Background="Olive">BUTTON_4</Button>
-    </DockPanel>-->
+    </DockPanel>
 
     <!--<Canvas>
         <Button Background="AliceBlue" Canvas.Bottom="50" Canvas.Left="40" Width="100" Height="80">B1</Button>
         <Button Background="Green" Canvas.Bottom="100" Canvas.Left="160" Width="100" Height="80" Canvas.Top="197">B2</Button>
     </Canvas>-->
 
-    <Grid>
+    <!--<Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Green" Offset="0"/>
@@ -71,5 +84,5 @@
         </Grid.Background>
         <Button x:Name="button" Content="Привет мир" Margin="37,279,549,42"></Button>
         
-    </Grid>
+    </Grid>-->
 </Window>
