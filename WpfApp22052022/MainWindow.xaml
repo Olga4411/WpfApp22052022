@@ -62,27 +62,41 @@
         --><!--
     </WrapPanel>-->
 
-    <DockPanel>
+    <!--<DockPanel>
         <Button DockPanel.Dock="Top" Background="Green" Height="80">BUTTON_1</Button>
         <Button DockPanel.Dock="Left" Background="Aqua" Height="120">BUTTON_2</Button>
         <Button DockPanel.Dock="Right" Background="Red">BUTTON_3</Button>
         <Button DockPanel.Dock="Bottom" Background="Yellow">BUTTON_4</Button>
         <Button DockPanel.Dock="Top" Background="Olive">BUTTON_4</Button>
-    </DockPanel>
+    </DockPanel>-->
 
+    <!--<UniformGrid Columns="4" Rows="3" FirstColumn="2">
+        <Button Background="Beige">BUTTON_1</Button>
+        <Button Background="Brown">BUTTON_2</Button>
+        <Button Background="Gold">BUTTON_3</Button>
+        <Button Background="Beige">BUTTON_4</Button>
+        <Button Background="Brown">BUTTON_5</Button>
+        <Button Background="Gold">BUTTON_6</Button>
+    </UniformGrid>-->
+    
     <!--<Canvas>
         <Button Background="AliceBlue" Canvas.Bottom="50" Canvas.Left="40" Width="100" Height="80">B1</Button>
         <Button Background="Green" Canvas.Bottom="100" Canvas.Left="160" Width="100" Height="80" Canvas.Top="197">B2</Button>
+        --><!-- отступы bottom снизу, left, где он лежит в пикселях
+        --><!--
     </Canvas>-->
 
-    <!--<Grid>
+    <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Green" Offset="0"/>
                 <GradientStop Color="Yellow" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="button" Content="Привет мир" Margin="37,279,549,42"></Button>
-        
-    </Grid>-->
+        <Button x:Name="button" Content="ПРИВЕТ WPF" Margin="30,305,561,42"></Button>
+        <Image x:Name="picture" Source="sky.bmp">
+        </Image>
+        <!-- Свойство margin-отступы по часовой стрелке
+        -->
+    </Grid>
 </Window>
