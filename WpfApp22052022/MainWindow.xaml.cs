@@ -36,5 +36,17 @@ namespace WpfApp22052022
             button.BeginAnimation(Button.WidthProperty, Anime);// какое свойство будет анимироваться ширина или высота
 
         }
+
+        private void picture_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            
+             var Anime = new System.Windows.Media.Animation.DoubleAnimation();
+            
+            Anime.To = 250;
+            Anime.From = 100;
+            Anime.Duration = TimeSpan.FromSeconds(10);// время в секундах
+            picture.BeginAnimation(Image.WidthProperty, Anime);
+            picture.BeginAnimation(Image.HeightProperty, Anime);
+        }
     }
 }
