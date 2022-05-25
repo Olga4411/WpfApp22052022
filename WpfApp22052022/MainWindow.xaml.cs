@@ -24,5 +24,17 @@ namespace WpfApp22052022
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            //1 Создали объект аниме
+            var Anime = new System.Windows.Media.Animation.DoubleAnimation();
+            // свойство to иfrom
+            Anime.To = 100;
+            Anime.From = 180;
+            Anime.Duration = TimeSpan.FromSeconds(5);// время в секундах
+            button.BeginAnimation(Button.WidthProperty, Anime);// какое свойство будет анимироваться ширина или высота
+
+        }
     }
 }
