@@ -93,14 +93,29 @@
                 <GradientStop Color="Yellow" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="button" Content="ПРИВЕТ WPF" Margin="30,305,561,42" Click="button_Click"></Button>
-        <Image x:Name="picture" Source="sky.bmp" Margin="355,-23,139,23" Height="100" Width="200" MouseLeftButtonUp="picture_MouseLeftButtonUp">
+        <Button x:Name="button" Content="ПРИВЕТ WPF" Margin="30,320,581,42" Click="button_Click"></Button>
+        <Image x:Name="picture" Source="sky.bmp" 
+               Margin="291,117,300,181" 
+               RenderTransformOrigin="0.5,0.5"
+               MouseLeftButtonUp="picture_MouseLeftButtonUp">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="sky.bmp"/>
             </Image.OpacityMask>
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <TranslateTransform/>
+                    <RotateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
         </Image>
         <!-- Свойство margin-отступы по часовой стрелке
         загрузка картинки
+       TransformGroup-масштабирование
+        ScaleTransform- масштабирование на коэффициент
+        ScewTransform
         -->
+        
     </Grid>
 </Window>
